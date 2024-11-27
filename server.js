@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios'); // For fetching images
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Route to fetch and serve images
 app.get('/fetch-image', async (req, res) => {
